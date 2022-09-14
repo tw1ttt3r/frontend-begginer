@@ -1,0 +1,34 @@
+/*
+* universal
+
+# id
+
+. clase
+
+tagname
+*/
+
+section {
+  display: grid;
+  grid-template: repeat(3, 1fr)/ repeat(3, 3fr);
+  grid-template-areas: "elem1 elem2 elem3" "elem4 elem5 elem6" "elem7 elem8 elem9";
+}
+
+.img-container {
+  width: 300px;
+  height: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.img-container:nth-child(1) {
+  grid-area: elem5;
+}
+
+
+button {
+  font-size: 100px;
+}
