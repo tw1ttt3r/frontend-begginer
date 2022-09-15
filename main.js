@@ -23,6 +23,6 @@ function aleatorio() {
 
 
 button.addEventListener("click", function() {
-  elements[0].style.gridArea = "elem1"
+  elements[aleatorio()].style.gridArea = `elem${aleatorio()}`
 })
 
